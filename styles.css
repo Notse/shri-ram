@@ -20,8 +20,8 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 50vh;
-  height: 25vh;
+  width: 41vh;
+  height: 20vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -53,8 +53,8 @@ body {
 .slider:before {
   position: absolute;
   content: "";
-  height: 20vh;
-  width: 20vh;
+  height: 15vh;
+  width: 15vh;
   left: 3vh;
   bottom: 2.5vh;
   background-color: white;
@@ -69,7 +69,7 @@ body {
 input:checked + .slider:before {
   -webkit-transform: translateX(25vh);
   -ms-transform: translateX(25vh);
-  transform: translateX(25vh);
+  transform: translateX(20vh);
 }
 
 input:checked + .slider {
@@ -82,12 +82,9 @@ input:checked + .slider {
 
 .mask {
   position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, 40%);
   display: block;
   width: 100%;
-  height: 151px;
+  height: 500px;
   background-color: #96534e;
 }
 
@@ -97,7 +94,7 @@ input:checked + .slider {
   width: 40vh;
   height: 40vh;
   left: 0;
-  transform: translate(0, 150px) rotate(-5deg) scaleX(-1);
+  transform: translate(0, 300px) rotate(-5deg) scaleX(-1);
   transition: all 0.9s;
 }
 

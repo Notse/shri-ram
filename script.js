@@ -42,11 +42,11 @@ function Checked() {
     }, 1000);
   } else {
     if (count >= 0) {
-      Hanuman.style.transform = "translate(0, 0px) rotate(-5deg) scaleX(-1)";
+      Hanuman.style.transform = "translate(0, -30px) rotate(-5deg) scaleX(-1)";
       sec = 2100;
       setTimeout(function () {
         Hanuman.style.transform =
-          "translate(0, 150px) rotate(-5deg) scaleX(-1)";
+          "translate(0, 300px) rotate(-5deg) scaleX(-1)";
         Wrapper.style.display = "none";
       }, 4400);
       hanumanArm.style.transition = "transform 1s ease-in";
