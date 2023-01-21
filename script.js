@@ -1,3 +1,4 @@
+// @author Nikhil Notse
 const Checkbox = document.querySelector(".checkbox");
 const hanumanArm = document.querySelector(".hanuman-arm");
 const hand = document.querySelector(".fist");
