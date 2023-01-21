@@ -1,0 +1,193 @@
+:root {
+  --yellow: #ffdb58;
+  /* ffdb58 */
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: #96534e;
+}
+
+/* Checkbox */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50vh;
+  height: 25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  /* z-index: 999; */
+}
+
+.slider.round {
+  border-radius: 100vh;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20vh;
+  width: 20vh;
+  left: 3vh;
+  bottom: 2.5vh;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(25vh);
+  -ms-transform: translateX(25vh);
+  transform: translateX(25vh);
+}
+
+input:checked + .slider {
+  background-color: var(--yellow);
+}
+.impossible-checkbox {
+  position: relative;
+  top: 61%;
+}
+
+.mask {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  display: block;
+  width: 100%;
+  height: 151px;
+  background-color: #96534e;
+}
+
+.hanuman {
+  position: absolute;
+  top: -90%;
+  width: 40vh;
+  height: 40vh;
+  left: 0;
+  transform: translate(0, 150px) rotate(-5deg) scaleX(-1);
+  transition: all 0.9s;
+}
+
+.hanuman-arm {
+  width: 12vh;
+  height: 12vh;
+  transform: translate(50px, 20px) scaleX(-1) rotate(50deg);
+  transition: transform 0.4s ease-in;
+}
+
+.arm-move {
+  transform: translate(-30px, 20px) scaleX(-1) rotate(50deg);
+  /* animation: move 1s; */
+}
+
+.arm-back {
+  transform: translate(50px, 20px) scaleX(-1) rotate(50deg);
+  /* animation: move 1s alternate-reverse forwards; */
+  transition: transform 0.4s ease-in;
+}
+
+.fist {
+  width: 12vh;
+  height: 12vh;
+  position: fixed;
+  top: 50%;
+  transform: translate(-20px, -55px) rotate(300deg);
+  transition: all ease-in 0.4s;
+  display: none;
+  /* transform: translate(80px, -15px) scaleX(0); */
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30px, 20px) scaleX(-1) rotate(50deg);
+  }
+
+  100% {
+    transform: translate(50px, 20px) scaleX(-1) rotate(50deg);
+  }
+}
+
+#shri-ram {
+  color: #fff;
+  width: 50vh;
+  height: 10vh;
+  position: fixed;
+  font-size: 50px;
+  bottom: 0%;
+  left: 10%;
+}
+
+.rabbit-lyrics {
+  position: fixed !important;
+  width: 100% !important;
+  font-size: 51px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.rabbit-lyrics__line {
+  display: none !important;
+}
+
+.rabbit-lyrics__line--active {
+  display: block !important;
+  color: #d6645c !important;
+}
+
+.copyright {
+  color: #fff;
+  font-family: monospace;
+  font-size: 21px;
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+}
+
+.wrapper {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: transparent;
+}
+
+#lyrics-1 {
+  display: none;
+}
